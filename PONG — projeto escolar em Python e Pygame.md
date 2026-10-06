@@ -4,10 +4,9 @@ Jogo de tênis de mesa de arcade para **dois jogadores no mesmo teclado**. O vis
 
 ## Arquivos do projeto
 
-- `main.py` — jogo completo: menus, desenho, controles, colisões, pontuação, aceleração e efeitos sonoros sintetizados.
+- `pong_escolar.py` — jogo completo: menus, desenho, controles, colisões, pontuação, aceleração e efeitos sonoros sintetizados.
 - `requirements.txt` — lista a dependência Python necessária (Pygame).
-- `README.md` — estas instruções e explicação do código.
-- `.gitignore` — evita guardar arquivos temporários e pastas de ambiente virtual.
+- `este arquivo.` — estas instruções e explicação do código.
 
 Não é necessário baixar imagens, músicas, fontes ou outros dados. Depois de instalar o Pygame, o jogo não precisa de internet, servidor ou banco de dados.
 
@@ -45,11 +44,8 @@ Instale a dependência e inicie o jogo:
 
 ```bash
 python -m pip install -r requirements.txt
-python main.py
+python pong_escolar.py
 ```
-
-Em alguns computadores, o comando pode ser `python3` em vez de `python`.
-
 ## Como jogar
 
 1. No menu, clique em **INICIAR** ou pressione **Enter/Espaço**.
@@ -61,19 +57,6 @@ Em alguns computadores, o comando pode ser `python3` em vez de `python`.
 
 O mouse é usado apenas nos botões dos menus. Não move as raquetes. Se o computador não tiver saída de áudio disponível, a partida continua sem som.
 
-## Mostrar o jogo em uma TV por HDMI
-
-1. Ligue uma ponta do cabo HDMI ao computador e a outra a uma entrada HDMI da TV.
-2. Na TV, selecione a entrada correta (por exemplo, **HDMI 1** ou **HDMI 2**).
-3. No computador, escolha como usar a segunda tela:
-   - **Windows:** pressione `Win + P` e escolha **Duplicar** para mostrar a mesma imagem nas duas telas, ou **Estender** para usar a TV como tela separada.
-   - **macOS:** abra **Ajustes do Sistema → Monitores**; ative o espelhamento ou organize as telas. Os nomes podem variar conforme a versão.
-   - **Linux:** abra **Configurações → Monitores/Telas** e selecione **Espelhar** ou configure a TV como tela externa. Os nomes variam por ambiente gráfico.
-4. Execute `python main.py`. Pressione **F11** para preencher a tela. Se estiver no modo **Estender**, arraste a janela do jogo para a TV antes de usar F11.
-5. Se quiser o áudio na TV, selecione a TV/HDMI como dispositivo de saída de som nas configurações de áudio do sistema.
-
-A resolução do jogo é ajustada para caber na tela mantendo a proporção. Dependendo do formato da TV, podem surgir pequenas faixas pretas; isso evita distorcer a imagem.
-
 ## Criar um executável para apresentar na escola (PyInstaller)
 
 O PyInstaller precisa ser instalado no mesmo sistema operacional no qual o executável será usado. Faça o processo no Windows para gerar para Windows, no macOS para macOS e no Linux para Linux.
@@ -84,11 +67,11 @@ Com o ambiente virtual ativado, instale o empacotador:
 python -m pip install pyinstaller
 ```
 
-Na pasta que contém `main.py`, gere o executável:
+Na pasta que contém `pong_escolar.py`, gere o executável:
 
 **Windows**
 ```powershell
-python -m PyInstaller --onefile --windowed --name PongEscolar main.py
+python -m PyInstaller --onefile --windowed --name PongEscolar pong_escolar.py
 ```
 O arquivo será `dist\PongEscolar.exe`.
 
