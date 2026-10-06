@@ -6,7 +6,7 @@ Jogo de tênis de mesa de arcade para **dois jogadores no mesmo teclado**. O vis
 
 - `pong_escolar.py` — jogo completo: menus, desenho, controles, colisões, pontuação, aceleração e efeitos sonoros sintetizados.
 - `requirements.txt` — lista a dependência Python necessária (Pygame).
-- `este arquivo.` — está as instruções e explicação do código.
+- `este arquivo.` — está as instruções e explicações sobre o código.
 
 Não é necessário baixar imagens, músicas, fontes ou outros dados. Depois de instalar o Pygame, o jogo não precisa de internet, servidor ou banco de dados.
 
