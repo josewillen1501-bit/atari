@@ -85,7 +85,7 @@ Para apresentar, copie o executável produzido na pasta `dist` para um pendrive 
 
 Se preferir uma pasta mais fácil de diagnosticar em vez de um arquivo único, retire `--onefile`; o aplicativo e seus componentes ficarão dentro de uma pasta em `dist`.
 
-## Como o código está organizado (`main.py`)
+## Como o código está organizado (`pong_escolar.py`)
 
 1. **Constantes iniciais** (`LARGURA`, `ALTURA`, cores e `PONTOS_PARA_VENCER`): definem o tamanho lógico da tela, a paleta e a meta de pontos. São os valores mais simples de personalizar.
 2. **`Sons`**: cria tons curtos diretamente na memória com ondas senoidais. Não carrega arquivos externos. Se não houver dispositivo de áudio, desativa os efeitos e mantém o jogo funcionando.
